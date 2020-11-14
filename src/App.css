@@ -1,0 +1,38 @@
+.app {
+  min-height: 100vh;
+  background: lightblue;
+}
+
+.tweet {
+  border-radius: 30px;
+  height: 300px;
+  width: 300px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.red {
+  color: red;
+  font-size: 50px;
+}
+
+.initialState{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+#loginButton{
+  background-color: green;
+  color: white;
+  font-size: 25px;
+  padding:0.35em 1.2em;
+  border-radius: 12px;
+  text-align:center;
+}
