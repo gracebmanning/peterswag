@@ -25,6 +25,8 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  line-height: 30px;
+  padding: 20px;
 }
 
 
@@ -32,7 +34,13 @@
   background-color: green;
   color: white;
   font-size: 25px;
-  padding:0.35em 1.2em;
+  padding: 15px;
   border-radius: 12px;
   text-align:center;
+}
+
+.PeterImage{
+  padding: 20px;
+  height: 400px;
+  width: 400px;
 }
