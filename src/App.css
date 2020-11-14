@@ -1,23 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
 .app {
   min-height: 100vh;
   background: lightblue;
-}
-
-.tweet {
-  border-radius: 30px;
-  height: 300px;
-  width: 300px;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-.red {
-  color: red;
-  font-size: 50px;
+  background: linear-gradient(70deg, rgba(246,224,176,1) 0%, rgba(241,245,204,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 .initialState{
@@ -27,13 +13,35 @@
   flex-direction: column;
   line-height: 30px;
   padding: 20px;
+  font-family: 'Cairo', sans-serif;
 }
 
+.initialStateText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lavender;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.mainHeader {
+  font-size: 50px;
+  padding: 10px;
+  color: #1DB954;
+  line-height: 40px;
+}
+
+.subtext {
+  font-size: 30px;
+  padding: 10px;
+}
 
 #loginButton{
-  background-color: green;
+  background-color: rgb(0, 150, 0);
   color: white;
   font-size: 25px;
+  font-family: 'Cairo', sans-serif;
   padding: 15px;
   border-radius: 12px;
   text-align:center;

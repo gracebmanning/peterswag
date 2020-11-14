@@ -5,6 +5,18 @@ import './index';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+class loginButton extends React.Component {
+  promptInput() {
+    alert("AHHH");
+  }
+  render(){
+    return(
+      <button onClick={this.promptInput}>WARGH!</button>
+    );
+  }
+}
+ReactDOM.render(<loginButton />, document.getElementById('root'));
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
