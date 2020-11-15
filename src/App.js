@@ -1,18 +1,33 @@
 import React, {useState} from 'react';
+import ReactDOM from 'react-dom';
 import peter from './peter.png';
 import './App.css';
+import image1 from './image_1.png'
+import image2 from './image_2.png'
+import image3 from './image_3.png'
+import image4 from './image_4.png'
+
+function authenticate() {
+  alert("AHHH");
+}
 
 function InitialState()
 {
+  const album = [image1, image2, image3, image4];
     return(
         <div className="initialState">
             <div className="initialStateText">
                 <h2 className="mainHeader">Peter Swag!</h2>
                 <p className="subtext">memeify your top tracks!</p>
             </div>
-            <button id="loginButton">Log in to Spotify</button>
-            
-            <img className="PeterImage" src={peter} alt="Peter"/>
+            <button id="loginButton" onClick={authenticate}>Log in to Spotify</button>
+            <div className="imageBox">
+              {/* <img className="PeterImage" src={peter} alt="Peter"/> */}
+              <img className="album1" src={album[0]} alt="test1"/>
+              <img className="album2" src={album[1]} alt="test2"/>
+              <img className="album3" src={album[2]} alt="test3"/>
+              <img className="album4" src={album[3]} alt="test4"/>
+            </div>
         </div>
 
     );
@@ -31,12 +46,27 @@ function Instructions(){
   );
 }
 
+{/*}
+function showAlbumCovers() {
+  const album = [image1, image2, image3, image4];
+  return(
+  <div className="albumBox">
+    <img className="album1" src={album[0]} alt="test1"/>
+    <img className="album2" src={album[1]} alt="test2"/>
+    <img className="album3" src={album[2]} alt="test3"/>
+    <img className="album4" src={album[3]} alt="test4"/>
+  </div>
+  );
+} */}
+
+
 
 function App(){
   return(
     <div className="app">
       <InitialState />
       <Instructions />
+      
     </div>
 
   );

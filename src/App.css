@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 
+:root {
+  --album-height: 123px;
+  --album-width: 123px;
+}
+
 .app {
   min-height: 100vh;
   background: lightblue;
@@ -47,8 +52,40 @@
   text-align:center;
 }
 
-.PeterImage{
-  padding: 20px;
-  height: 400px;
-  width: 400px;
+.imageBox {
+  height: 500px;
+  width: 500px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./peter.png');
+  background-size: cover;
 }
+
+.imageBox > img{
+  position: relative;
+  z-index: 2;
+  height: var(--album-height);
+  width: var(--album-width);
+}
+.album1 {
+  top: 44px;
+  left: -5px;
+}
+
+.album2 {
+  bottom: 133px;
+  right: 74px;
+}
+
+.album3 {
+  bottom: 134px;
+  left: 69px;
+}
+
+.album4 {
+  top: 33px;
+  right: -4px;
+}
+
