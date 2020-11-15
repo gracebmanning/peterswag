@@ -7,8 +7,8 @@
 
 .app {
   min-height: 100vh;
-  background: lightblue;
-  background: linear-gradient(70deg, rgba(246,224,176,1) 0%, rgba(241,245,204,1) 35%, rgba(0,212,255,1) 100%);
+  background: #DFFFD3;
+  {/*background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%, rgb(255, 255, 255) 100%);*/}
 }
 
 .initialState{
@@ -22,6 +22,7 @@
 }
 
 .initialStateText {
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,20 +31,41 @@
   padding: 5px;
 }
 
+.headerAndLogo {
+  display: flex;
+}
+
+.PeterSwagLogo {
+  height: 75px;
+  width: 75px;
+  margin: 7px;
+}
+
+.initialStateTextHead {
+  padding: 5px;
+}
+
+.initialStateTextInstructions {
+  margin: 25px;
+  font-size: 20px;
+}
+
 .mainHeader {
-  font-size: 50px;
+  font-size: 70px;
   padding: 10px;
   color: #1DB954;
-  line-height: 40px;
+  line-height: 60px;
 }
 
 .subtext {
-  font-size: 30px;
+  font-size: 40px;
   padding: 10px;
+  line-height: 50px;
+  justify-self: right;
 }
 
 #loginButton{
-  background-color: rgb(0, 150, 0);
+  background-color: #1DB954;
   color: white;
   font-size: 25px;
   font-family: 'Cairo', sans-serif;
@@ -61,6 +83,7 @@
   align-items: center;
   background-image: url('./peter.png');
   background-size: cover;
+  border-radius: 15px;
 }
 
 .imageBox > img{
