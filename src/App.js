@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {getLoginURL, getAlbumImages} from './backend.js';
 import ReactDOM from 'react-dom';
 import peter from './peter.png';
 import './App.css';
@@ -13,14 +14,18 @@ import omega from './omega.jpeg'
 import peterswag from './peterswag.PNG'
 
 function authenticate() {
-{/*alert("AHHH");*/}
-  
-  return([toast, waco, apologetix, omega]);
+  window.location.replace(getLoginURL());
+}
 
+function fillAlbum() {
+  var data = getAlbumImages('BQDBsVgsnmCmhGbH9BBklH0vWNZtq4kiCX9MpIq13ArushMN8v6pRp_E9uelkfe6NPPGLdQkYIDC15LnegKofVKRDQLg6zVUi0JOTdpvE4X-WBjhwGeWhYTitJCiPAuCv5Y67CZ6AIWAlOdiw7vlYk2af2yQ');
+  var new_images = [toast, waco, apologetix, omega];
+  /*var new_images = [<img src={data[0]}/>, <img src={data[1]}/>, <img src={data[2]}/>, <img src={data[3]}/>];*/
+  return(new_images);
 }
 
 
-function InitialState(props)
+function InitialState()
 {
   const [album, setAlbum] = useState([image1, image2, image3, image4]);
   return(
@@ -37,7 +42,10 @@ function InitialState(props)
               <Instructions />
             </div>
           </div>
-          <button id="loginButton" onClick={() => setAlbum(authenticate())}>Spotify Login</button>
+          <div className="buttons">
+            <button id="loginButton" onClick={() => {if((new URLSearchParams(window.location.search)).get('code') == null){authenticate();}}}>Spotify Login</button>
+            <button id="showAlbumsButton" onClick={() => setAlbum(fillAlbum())}>Show Album Images</button>
+          </div>
           <div className="imageBox">
             {/* <img className="PeterImage" src={peter} alt="Peter"/> */}
             <img className="album1" src={album[0]} alt="test1"/>
@@ -59,8 +67,8 @@ function InitialState(props)
 
 
 function Instructions(){
-  const instructionText1 = "1. Click the button below to login to Spotify.";
-  const instructionText2 = "2. Watch your top albums be displayed behind Peter.";
+  const instructionText1 = "1. Click \"Spotify Login\" to login to Spotify.";
+  const instructionText2 = "2. Click \"Show Album Images\" to display albums.";
   return(
       <div className="instructions">
           <h2 className="instructionsHeader">Instructions</h2>
