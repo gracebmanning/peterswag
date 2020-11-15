@@ -18,7 +18,7 @@ function authenticate() {
 }
 
 function fillAlbum() {
-  var data = getAlbumImages('BQDBsVgsnmCmhGbH9BBklH0vWNZtq4kiCX9MpIq13ArushMN8v6pRp_E9uelkfe6NPPGLdQkYIDC15LnegKofVKRDQLg6zVUi0JOTdpvE4X-WBjhwGeWhYTitJCiPAuCv5Y67CZ6AIWAlOdiw7vlYk2af2yQ');
+  /*var data = getAlbumImages('BQDBsVgsnmCmhGbH9BBklH0vWNZtq4kiCX9MpIq13ArushMN8v6pRp_E9uelkfe6NPPGLdQkYIDC15LnegKofVKRDQLg6zVUi0JOTdpvE4X-WBjhwGeWhYTitJCiPAuCv5Y67CZ6AIWAlOdiw7vlYk2af2yQ');*/
   var new_images = [toast, waco, apologetix, omega];
   /*var new_images = [<img src={data[0]}/>, <img src={data[1]}/>, <img src={data[2]}/>, <img src={data[3]}/>];*/
   return(new_images);
