@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import peter from './peter.png';
 import './App.css';
-import image1 from './image_1.png'
-import image2 from './image_2.png'
-import image3 from './image_3.png'
-import image4 from './image_4.png'
+import image1 from './placeholder2.PNG'
+import image2 from './placeholder2.PNG'
+import image3 from './placeholder2.PNG'
+import image4 from './placeholder2.PNG'
 import peterswag from './peterswag.PNG'
 
 function authenticate() {
@@ -40,6 +40,13 @@ function InitialState(props)
             <img className="album2" src={album[1]} alt="test2"/>
             <img className="album3" src={album[2]} alt="test3"/>
             <img className="album4" src={album[3]} alt="test4"/>
+          </div>
+          <div className="credits">
+            <p>Created by <a href='https://github.com/tasti/react-linkify/' target='_blank'><font color="black">Kaitlyn Suzuki</font></a>,
+                          <a href='https://github.com/tasti/react-linkify/' target='_blank'><font color="black">Linda Fan</font></a>,
+                          <a href='https://www.linkedin.com/in/grace-manning/' target='_blank'><font color="black">Grace Manning</font></a>,
+                          <a href='https://www.linkedin.com/in/mignon-april-lee/' target='_blank'><font color="black">Mignon April Lee</font></a>.
+            </p>
           </div>
       </div>
 

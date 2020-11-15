@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
 
 :root {
-  --album-height: 123px;
-  --album-width: 123px;
+  --album-height: 133px;
+  --album-width: 133px;
 }
 
 .app {
@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
   background: #e6e6fa;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 5px;
 }
 
@@ -66,16 +66,19 @@
 #loginButton{
   background-color: #1DB954;
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   font-family: 'Cairo', sans-serif;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 10px;
   text-align:center;
+  width: 250px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .imageBox {
-  height: 500px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
   margin-top: 10px;
   display: flex;
   justify-content: center;
@@ -92,22 +95,27 @@
   width: var(--album-width);
 }
 .album1 {
-  top: 44px;
-  left: -5px;
+  top: 37px;
+  left: -2px;
 }
 
 .album2 {
-  bottom: 133px;
-  right: 74px;
+  bottom: 148px;
+  right: 78px;
 }
 
 .album3 {
-  bottom: 134px;
-  left: 69px;
+  bottom: 150px;
+  left: 71px;
 }
 
 .album4 {
-  top: 33px;
-  right: -4px;
+  top: 30px;
+  right: -1px;
+}
+
+.credits {
+  font-size: 17px;
+  margin-top: 20px;
 }
 
