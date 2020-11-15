@@ -1,23 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+
+:root {
+  --album-height: 133px;
+  --album-width: 133px;
+}
+
 .app {
   min-height: 100vh;
-  background: lightblue;
-}
-
-.tweet {
-  border-radius: 30px;
-  height: 300px;
-  width: 300px;
-  background: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-.red {
-  color: red;
-  font-size: 50px;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(235,255,228,1) 15%, rgba(223,255,211,1) 45%, rgba(235,255,228,1) 75%);
 }
 
 .initialState{
@@ -25,14 +16,125 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  line-height: 30px;
+  padding: 20px;
+  font-family: 'Cairo', sans-serif;
 }
 
+.initialStateText {
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6e6fa;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.headerAndLogo {
+  display: flex;
+}
+
+.PeterSwagLogo {
+  height: 75px;
+  width: 75px;
+  margin: 7px;
+}
+
+.initialStateTextHead {
+  padding: 5px;
+}
+
+.initialStateTextInstructions {
+  margin: 25px;
+  font-size: 20px;
+}
+
+.mainHeader {
+  font-size: 70px;
+  padding: 10px;
+  color: #1DB954;
+  line-height: 60px;
+}
+
+.subtext {
+  font-size: 40px;
+  padding: 10px;
+  line-height: 50px;
+  justify-self: right;
+}
+
+.buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 #loginButton{
-  background-color: green;
+  background-color: #1DB954;
   color: white;
-  font-size: 25px;
-  padding:0.35em 1.2em;
-  border-radius: 12px;
+  font-size: 30px;
+  font-family: 'Cairo', sans-serif;
+  border-radius: 10px;
   text-align:center;
+  width: 275px;
+  height: 75px;
 }
+
+#showAlbumsButton{
+  background-color: white;
+  color: #1DB954;
+  font-size: 25px;
+  font-family: 'Cairo', sans-serif;
+  padding: 15px;
+  border-radius: 10px;
+  text-align:center;
+  width: 275px;
+  height: 75px;
+  
+  margin-left: 15px;
+}
+
+
+.imageBox {
+  height: 550px;
+  width: 550px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./peter_lavender_background.png');
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.imageBox > img{
+  position: relative;
+  z-index: 2;
+  height: var(--album-height);
+  width: var(--album-width);
+}
+.album1 {
+  top: 37px;
+  left: -2px;
+}
+
+.album2 {
+  bottom: 148px;
+  right: 78px;
+}
+
+.album3 {
+  bottom: 150px;
+  left: 71px;
+}
+
+.album4 {
+  top: 30px;
+  right: -1px;
+}
+
+.credits {
+  font-size: 17px;
+  margin-top: 20px;
+}
+
